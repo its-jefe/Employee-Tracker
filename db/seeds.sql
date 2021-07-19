@@ -2,20 +2,28 @@ INSERT INTO department
     (name)
 VALUES
   ('IT'),
-  ('Software Developement'),
   ('HR'),
   ('Marketing'),
+  ('Sales'),
+  ('Finance'),
+  ('Engineering'),
   ('Legal');
 
 INSERT INTO role
   (title, salary, department_id)
 VALUES
-  ('manager', 140000, 1),
-  ('engineer', 80000, 1),
-  ('intern', 40000, 1),
-  ('manager', 140000, 2),
-  ('engineer', 80000, 2),
-  ('intern', 40000, 2);
+  ('Software Engineer', 120000, 6),
+  ('Lead Engineer', 150000, 6),
+  ('Intern', 40000, 6),
+
+  ('Salesperson', 80000, 5),
+  ('Sales Lead', 100000, 5),
+
+  ('Legal Team Lead', 80000, 7),
+  ('Lawyer', 140000, 7),
+  ('Intern', 40000, 7),
+
+  ('Accountant', 125000, 5);
 
 INSERT INTO employee
   (first_name, last_name, role_id, manager_id)

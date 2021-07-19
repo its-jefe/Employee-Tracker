@@ -11,9 +11,9 @@ let db = mysql.createConnection({
 console.clear()
 
 // condesnsed into one line 
-// console.log(`╔════════════════════════════════════════════════════════════════════════════════════════╗\n║   ╔══════╗  ╔═════════╗  ╔══════╗  ╔═╗       ╔══════╗  ╔═╗   ╔═╗  ╔══════╗  ╔══════╗   ║\n║   ║ ╔════╝  ║ ╔═╗ ╔═╗ ║  ║ ╔══╗ ║  ║ ║       ║ ╔══╗ ║  ║ ║   ║ ║  ║ ╔════╝  ║ ╔════╝   ║\n║   ║ ╚═══╗   ║ ║ ║ ║ ║ ║  ║ ╚══╝ ║  ║ ║       ║ ║  ║ ║  ╚╗╚═══╝╔╝  ║ ╚═══╗   ║ ╚═══╗    ║\n║   ║ ╔═══╝   ║ ║ ╚═╝ ║ ║  ║ ╔════╝  ║ ║       ║ ║  ║ ║   ╚═╗ ╔═╝   ║ ╔═══╝   ║ ╔═══╝    ║\n║   ║ ╚════╗  ║ ║     ║ ║  ║ ║       ║ ╚════╗  ║ ╚══╝ ║     ║ ║     ║ ╚════╗  ║ ╚════╗   ║\n║   ╚══════╝  ╚═╝     ╚═╝  ╚═╝       ╚══════╝  ╚══════╝     ╚═╝     ╚══════╝  ╚══════╝   ║\n║                                                                                        ║\n║      ╔═══════╗  ╔══════╗  ╔══════╗  ╔══════╗  ╔═╗  ╔═╗   ╔══════╗  ╔══════╗   ╔═╗      ║\n║      ╚══╗ ╔══╝  ║ ╔══╗ ║  ║ ╔══╗ ║  ║ ╔════╝  ║ ║ ╔╝╔╝   ║ ╔════╝  ║ ╔══╗ ║   ║ ║      ║   \n║         ║ ║     ║ ╚══╝ ║  ║ ╚══╝ ║  ║ ║       ║ ╚═╝╔╝    ║ ╚══╗    ║ ╚══╝ ║   ║ ║      ║   \n║         ║ ║     ║ ╔═╗ ╔╝  ║ ╔══╗ ║  ║ ║       ║ ╔═╗╚╗    ║ ╔══╝    ║ ╔═╗ ╔╝   ╚═╝      ║   \n║         ║ ║     ║ ║ ╚╗╚╗  ║ ║  ║ ║  ║ ╚════╗  ║ ║ ╚╗╚╗   ║ ╚════╗  ║ ║ ╚╗╚╗   ╔═╗      ║\n║         ╚═╝     ╚═╝  ╚═╝  ╚═╝  ╚═╝  ╚══════╝  ╚═╝  ╚═╝   ╚══════╝  ╚═╝  ╚═╝   ╚═╝      ║\n╚════════════════════════════════════════════════════════════════════════════════════════╝        
-// `
-// )
+console.log(`╔════════════════════════════════════════════════════════════════════════════════════════╗\n║   ╔══════╗  ╔═════════╗  ╔══════╗  ╔═╗       ╔══════╗  ╔═╗   ╔═╗  ╔══════╗  ╔══════╗   ║\n║   ║ ╔════╝  ║ ╔═╗ ╔═╗ ║  ║ ╔══╗ ║  ║ ║       ║ ╔══╗ ║  ║ ║   ║ ║  ║ ╔════╝  ║ ╔════╝   ║\n║   ║ ╚═══╗   ║ ║ ║ ║ ║ ║  ║ ╚══╝ ║  ║ ║       ║ ║  ║ ║  ╚╗╚═══╝╔╝  ║ ╚═══╗   ║ ╚═══╗    ║\n║   ║ ╔═══╝   ║ ║ ╚═╝ ║ ║  ║ ╔════╝  ║ ║       ║ ║  ║ ║   ╚═╗ ╔═╝   ║ ╔═══╝   ║ ╔═══╝    ║\n║   ║ ╚════╗  ║ ║     ║ ║  ║ ║       ║ ╚════╗  ║ ╚══╝ ║     ║ ║     ║ ╚════╗  ║ ╚════╗   ║\n║   ╚══════╝  ╚═╝     ╚═╝  ╚═╝       ╚══════╝  ╚══════╝     ╚═╝     ╚══════╝  ╚══════╝   ║\n║                                                                                        ║\n║      ╔═══════╗  ╔══════╗  ╔══════╗  ╔══════╗  ╔═╗  ╔═╗   ╔══════╗  ╔══════╗   ╔═╗      ║\n║      ╚══╗ ╔══╝  ║ ╔══╗ ║  ║ ╔══╗ ║  ║ ╔════╝  ║ ║ ╔╝╔╝   ║ ╔════╝  ║ ╔══╗ ║   ║ ║      ║   \n║         ║ ║     ║ ╚══╝ ║  ║ ╚══╝ ║  ║ ║       ║ ╚═╝╔╝    ║ ╚══╗    ║ ╚══╝ ║   ║ ║      ║   \n║         ║ ║     ║ ╔═╗ ╔╝  ║ ╔══╗ ║  ║ ║       ║ ╔═╗╚╗    ║ ╔══╝    ║ ╔═╗ ╔╝   ╚═╝      ║   \n║         ║ ║     ║ ║ ╚╗╚╗  ║ ║  ║ ║  ║ ╚════╗  ║ ║ ╚╗╚╗   ║ ╚════╗  ║ ║ ╚╗╚╗   ╔═╗      ║\n║         ╚═╝     ╚═╝  ╚═╝  ╚═╝  ╚═╝  ╚══════╝  ╚═╝  ╚═╝   ╚══════╝  ╚═╝  ╚═╝   ╚═╝      ║\n╚════════════════════════════════════════════════════════════════════════════════════════╝        
+`
+)
 
 function menu() {
   inquirer
@@ -36,10 +36,9 @@ function menu() {
           `6. Add an employee`,
           `7. Update an employee role`,
           `8. Exit`
-          // can i end node for them?
         ]
       }
-    ]).then((passedObject) => { // pass number to switch
+    ]).then((passedObject) => { // pass menu-item number to switch
       switchFunction(passedObject.choice.charAt(0))
     });
 }
@@ -68,13 +67,13 @@ async function switchFunction(choice) {
       updateEmployeeRole();
       break; //unnecessary but i like it
     default:
+      // ends Node
       console.log(` GoodBye!`)
       process.kill(process.pid, "SIGINT");
-      return
   }
 }
 
-// 1
+// 1 - FINISHED
 function viewDepartments() {
   const sql = 'SELECT * FROM department';
   db.query(sql, (err, results) => {
@@ -82,25 +81,21 @@ function viewDepartments() {
     // get all object keys .. find the largest value + 2 for side spacing
     // add them all together .. add dividers etc
 
-    console.log('╔════╦═══════════════════════╗')
     console.log(`| id | name                  |`)
-    console.log(`╠════╬═══════════════════════╣`)
     for (const { id, name } of results) {
-      console.log(`║ ${id}  ║ ${name} ║`)
+      console.log(`| ${id}  | ${name} |`)
     }
-    console.log(`╚════╩═══════════════════════╝`)
 
     menu();
   });
 }
 
-// 2
+// 2  - FINISHED
 function viewRoles() {
   const sql = 'SELECT * FROM role';
   db.query(sql, (err, results) => {
     console.log('')
     console.log(`| id | title    | salary | department_id |`)
-    console.log(`-- ----- ------ -------------`)
     for (const { id, title, salary, department_id } of results) {
       console.log(`${id}  ${title}  ${salary}  ${department_id}`)
     }
@@ -109,13 +104,12 @@ function viewRoles() {
   });
 }
 
-// 3
+// 3 : TODO: Add Department and get name by ID or just table join?
 function viewEmployees() {
   const sql = 'SELECT * FROM employee';
   db.query(sql, (err, results) => {
     console.log('')
     console.log(`| id | first_name | last_name | role_id | manager_id |`)
-    console.log(`╠════╬═══════════╬═══════════╬═════════╬════════════╣`)
     for (const { id, first_name, last_name, role_id, manager_id } of results) {
       console.log(`${id}  ${first_name}  ${last_name}  ${role_id}  ${manager_id}`)
     }
@@ -124,15 +118,15 @@ function viewEmployees() {
   });
 }
 
-// 4
+// 4 - FINISHED
 async function addDepartment() {
   const sql = `INSERT INTO department (name) 
               VALUES (?)`;
 
   let params;
 
-  // uppercase first letter after spaces 
-  // split . touppercase index[0] . join
+  // TODO: uppercase first letter after spaces 
+  // split . touppercase . join
 
   // build department object 
   await inquirer
@@ -152,103 +146,53 @@ async function addDepartment() {
   })
 }
 
-async function addRole() {
-  const sql = `INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)`;
+async function getDepartments() {
+  const original = `SELECT *
+                    FROM department`;
+  let hodor = [];
 
-  let params;
-
-  // build role object 
-  // title, salary, department_id
-  await inquirer
-    .prompt([
-      {
-        type: 'input',
-        name: 'title',
-        message: `Enter the title of the role: `,
-      },
-      {
-        type: 'number',
-        name: 'salary',
-        message: `Enter the salary: `,
-      },
-      {
-        // probably need this to be a list.. 
-        // of current departments 
-        type: 'number',
-        name: 'department_id',
-        message: `Which department: `,
-      }
-    ]).then(({ title, salary, department_id }) => { // destructure
-      params = [
-        title,
-        salary,
-        department_id
-      ]
-    });
-
-  db.query(sql, params, (err, results) => {
-    console.log(results)
-    menu();
+  db.query(original, (err, results) => {
+    for (row of results) {
+      let { id, name } = row
+      hodor.push(`${id} ${name}`)
+    }   
   })
-}
 
-async function addEmployee() {
-  const sql = `INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)`;
-
-  let params;
-  // build employee object 
-  // first_name, last_name, role_id, manager_id
   await inquirer
-    .prompt([
-      {
-        type: 'input',
-        name: 'first_name',
-        message: `First name of employee: `,
-      },
-      {
-        type: 'input',
-        name: 'last_name',
-        message: `Last name of employee: `,
-      },
-      {
-        // probably need this to be a list.. 
-        // of current departments 
-        type: 'number',
-        name: 'role_id',
-        message: `Role ID: `,
-        // list roles
-      },
-      {
-        type: 'input',
-        name: 'manager_id',
-        message: `Manager ID: `,
-        // list with option for null
-      }
-    ]).then(({ first_name, last_name, role_id, manager_id }) => { // destructure
-      params = [
-        first_name,
-        last_name,
-        role_id,
-        manager_id
-      ]
-    });
+  .prompt([
+    {
+      type: 'input',
+      name: 'title',
+      message: `Enter the title of the role: `,
+    },
+    {
+      type: 'number',
+      name: 'salary',
+      message: `Enter the salary: `,
+    },
+    {
+      // probably need this to be a list.. 
+      // of current departments 
+      type: 'list',
+      name: 'department_id',
+      message: `Which department: `,
+      choices: hodor
+    }
+  ]).then(({ title, salary, department_id }) => { // destructure
+    params = [
+      title,
+      salary,
+      department_id[0]
+    ]
+  });
 
-  db.query(sql, params, (err, results) => {
-    console.log(results);
-    menu();
-  })
-}
-
-async function updateEmployeeRole() {
-  // employees for 
+  return params;
+} 
+// get employees (for inquirer lists)
+async function getEmployees() {
   const original = `SELECT id, first_name, last_name
                     FROM employee`;
-
-  const sql = `UPDATE employee SET role_id = ? 
-               WHERE id = ?`;
-
   let employees = []
-  let params;
 
   //fill employees with this
   db.query(original, async (err, results) => {
@@ -276,6 +220,78 @@ async function updateEmployeeRole() {
         menu();
       });
   })
+}
+
+async function addRole() {
+
+  const sql = `INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)`;
+
+  // build role object
+  // title, salary, department_id
+  let params = await getDepartments();
+
+  console.log(params);
+
+  db.query(sql, params, (err, results) => {
+    console.log(results);
+    menu();
+  })
+}
+
+// NEED TO ADD DEPARTMENTS TO THIS -> queries should probably be based off of departments for choosing roles and managers 
+async function addEmployee() {
+  const sql = `INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)`;
+
+  let params;
+  // build employee object 
+  // first_name, last_name, role_id, manager_id
+  await inquirer
+    .prompt([
+      {
+        type: 'input',
+        name: 'first_name',
+        message: `First name of employee: `,
+      },
+      {
+        type: 'input',
+        name: 'last_name',
+        message: `Last name of employee: `,
+      },
+      {
+        // probably need this to be a list.. 
+        // of current departments 
+        type: 'number',
+        name: 'role_id',
+        message: `Role of employee: `,
+        // list roles
+      },
+      {
+        type: 'input',
+        name: 'manager_id',
+        message: `Manager ID: `,
+        // list with option for null
+      }
+    ]).then(({ first_name, last_name, role_id, manager_id }) => { // destructure
+      params = [
+        first_name,
+        last_name,
+        role_id,
+        manager_id
+      ]
+    });
+
+  db.query(sql, params, (err, results) => {
+    console.log(results);
+    menu();
+  })
+}
+
+
+async function updateEmployeeRole() {
+  const sql = `UPDATE employee SET role_id = ? 
+               WHERE id = ?`;
+
+  let employees = await getEmployees(); // to fill inquirer list
 
 
   // db.query(sql, params, (err, results) => {
