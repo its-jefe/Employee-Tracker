@@ -35,7 +35,7 @@ function menu() {
           `5. Add a role`,
           `6. Add an employee`,
           `7. Update an employee role`,
-          `8. Exit (but end node on your own)`
+          `8. Exit`
           // can i end node for them?
         ]
       }
@@ -69,6 +69,7 @@ async function switchFunction(choice) {
       break; //unnecessary but i like it
     default:
       console.log(` GoodBye!`)
+      process.kill(process.pid, "SIGINT");
       return
   }
 }
@@ -84,8 +85,8 @@ function viewDepartments() {
     console.log('╔════╦═══════════════════════╗')
     console.log(`| id | name                  |`)
     console.log(`╠════╬═══════════════════════╣`)
-    for (const element of results) {
-      console.log(`║ ${element.id}  ║ ${element.name} ║`)
+    for (const { id, name } of results) {
+      console.log(`║ ${id}  ║ ${name} ║`)
     }
     console.log(`╚════╩═══════════════════════╝`)
 
@@ -100,8 +101,8 @@ function viewRoles() {
     console.log('')
     console.log(`| id | title    | salary | department_id |`)
     console.log(`-- ----- ------ -------------`)
-    for (const element of results) {
-      console.log(`${element.id}  ${element.title}  ${element.salary}  ${element.department_id}`)
+    for (const { id, title, salary, department_id } of results) {
+      console.log(`${id}  ${title}  ${salary}  ${department_id}`)
     }
     console.log('')
     menu();
@@ -115,8 +116,8 @@ function viewEmployees() {
     console.log('')
     console.log(`| id | first_name | last_name | role_id | manager_id |`)
     console.log(`╠════╬═══════════╬═══════════╬═════════╬════════════╣`)
-    for (const element of results) {
-      console.log(`${element.id}  ${element.first_name}  ${element.last_name}  ${element.role_id}  ${element.manager_id}`)
+    for (const { id, first_name, last_name, role_id, manager_id } of results) {
+      console.log(`${id}  ${first_name}  ${last_name}  ${role_id}  ${manager_id}`)
     }
     console.log('')
     menu();
@@ -125,10 +126,8 @@ function viewEmployees() {
 
 // 4
 async function addDepartment() {
-  const sql = `INSERT INTO department 
-              (name) 
-              VALUES 
-              (?)`;
+  const sql = `INSERT INTO department (name) 
+              VALUES (?)`;
 
   let params;
 
@@ -147,10 +146,10 @@ async function addDepartment() {
       console.log(passedObject)
       params = passedObject.name
     });
-    db.query(sql, params, (err, results) => {
-      console.log(results)
-      menu();
-    })
+  db.query(sql, params, (err, results) => {
+    console.log(results)
+    menu();
+  })
 }
 
 async function addRole() {
@@ -172,14 +171,14 @@ async function addRole() {
         name: 'salary',
         message: `Enter the salary: `,
       },
-      { 
+      {
         // probably need this to be a list.. 
         // of current departments 
         type: 'number',
         name: 'department_id',
         message: `Which department: `,
       }
-    ]).then(({title, salary, department_id}) => { // destructure
+    ]).then(({ title, salary, department_id }) => { // destructure
       params = [
         title,
         salary,
@@ -187,10 +186,10 @@ async function addRole() {
       ]
     });
 
-    db.query(sql, params, (err, results) => {
-      console.log(results)
-      menu();
-    })
+  db.query(sql, params, (err, results) => {
+    console.log(results)
+    menu();
+  })
 }
 
 async function addEmployee() {
@@ -211,7 +210,7 @@ async function addEmployee() {
         name: 'last_name',
         message: `Last name of employee: `,
       },
-      { 
+      {
         // probably need this to be a list.. 
         // of current departments 
         type: 'number',
@@ -222,10 +221,10 @@ async function addEmployee() {
       {
         type: 'input',
         name: 'manager_id',
-        message: `Manager ID: `, 
+        message: `Manager ID: `,
         // list with option for null
       }
-    ]).then(({first_name, last_name, role_id, manager_id}) => { // destructure
+    ]).then(({ first_name, last_name, role_id, manager_id }) => { // destructure
       params = [
         first_name,
         last_name,
@@ -234,49 +233,54 @@ async function addEmployee() {
       ]
     });
 
-    db.query(sql, params, (err, results) => {
-      console.log(results)
-      menu();
-    })
+  db.query(sql, params, (err, results) => {
+    console.log(results);
+    menu();
+  })
 }
 
 async function updateEmployeeRole() {
-  const original = `SELECT employee.*, role.id 
-                    AS role_id 
+  // employees for 
+  const original = `SELECT id, first_name, last_name
                     FROM employee`;
 
-  const sql = `UPDATE candidates SET party_id = ? 
+  const sql = `UPDATE employee SET role_id = ? 
                WHERE id = ?`;
 
+  let employees = []
   let params;
 
-  let employees = []
-  
   //fill employees with this
-  db.query(original, (err, results) => {
-    console.log(results)
+  db.query(original, async (err, results) => {
+    for (row of results) {
+      let { id, first_name, last_name } = row
+      employees.push(`${id}. ${first_name} ${last_name}`)
+    }
+    console.log(`- - - - - - - - - - - - - - - - - - - -
+    `)
+    console.log(employees)
+    console.log(employees.length)
+
+    await inquirer
+      .prompt([
+        {
+          type: 'list',
+          name: 'name',
+          message: `Pick your emloyee: `,
+          pageSize: employees.length,
+          choices: employees
+        }
+      ]).then((choice) => { // destructure
+        console.log(choice)
+        console.log(choice.index)
+        menu();
+      });
   })
 
-  // await inquirer
-  // .prompt([
-  //   {
-  //     type: 'list',
-  //     name: 'first_name',
-  //     message: `First name of employee: `,
-  //     choices: employees
-  //   }
-  // ]).then(({first_name, last_name, role_id, manager_id}) => { // destructure
-  //   params = [
-  //     first_name,
-  //     last_name,
-  //     role_id,
-  //     manager_id
-  //   ]
-  // });
 
   // db.query(sql, params, (err, results) => {
   //   console.log(results)
-    menu();
+  // menu();
   // })
 }
 
