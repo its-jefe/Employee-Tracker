@@ -6,8 +6,10 @@ This node.js application uses MySQL2 and Inquirer to store, retrieve, and edit c
 
 ## Usage
 
-At this point I have not made it around to elaborating on ID's
-i.e. Department, role, and manager IDs all show as only the number... They work fine, but I will JOIN tables abd show more readable titles 
+- At this point I have not made it around to elaborating on ID's
+>> i.e. Department, role, and manager IDs all show as only the number... They work fine, but I will JOIN tables abd show more readable titles 
+
+- Also the formatting is incredibly underwhelming. I wanted to work on that more but had to let it go to battle with queries and asynchronicity
 
 [Here is the usage video](https://its-jefe.github.io/videos/)
 
