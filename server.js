@@ -11,9 +11,9 @@ let db = mysql.createConnection({
 console.clear()
 
 // condesnsed into one line 
-console.log(`╔════════════════════════════════════════════════════════════════════════════════════════╗\n║   ╔══════╗  ╔═════════╗  ╔══════╗  ╔═╗       ╔══════╗  ╔═╗   ╔═╗  ╔══════╗  ╔══════╗   ║\n║   ║ ╔════╝  ║ ╔═╗ ╔═╗ ║  ║ ╔══╗ ║  ║ ║       ║ ╔══╗ ║  ║ ║   ║ ║  ║ ╔════╝  ║ ╔════╝   ║\n║   ║ ╚═══╗   ║ ║ ║ ║ ║ ║  ║ ╚══╝ ║  ║ ║       ║ ║  ║ ║  ╚╗╚═══╝╔╝  ║ ╚═══╗   ║ ╚═══╗    ║\n║   ║ ╔═══╝   ║ ║ ╚═╝ ║ ║  ║ ╔════╝  ║ ║       ║ ║  ║ ║   ╚═╗ ╔═╝   ║ ╔═══╝   ║ ╔═══╝    ║\n║   ║ ╚════╗  ║ ║     ║ ║  ║ ║       ║ ╚════╗  ║ ╚══╝ ║     ║ ║     ║ ╚════╗  ║ ╚════╗   ║\n║   ╚══════╝  ╚═╝     ╚═╝  ╚═╝       ╚══════╝  ╚══════╝     ╚═╝     ╚══════╝  ╚══════╝   ║\n║                                                                                        ║\n║      ╔═══════╗  ╔══════╗  ╔══════╗  ╔══════╗  ╔═╗  ╔═╗   ╔══════╗  ╔══════╗   ╔═╗      ║\n║      ╚══╗ ╔══╝  ║ ╔══╗ ║  ║ ╔══╗ ║  ║ ╔════╝  ║ ║ ╔╝╔╝   ║ ╔════╝  ║ ╔══╗ ║   ║ ║      ║   \n║         ║ ║     ║ ╚══╝ ║  ║ ╚══╝ ║  ║ ║       ║ ╚═╝╔╝    ║ ╚══╗    ║ ╚══╝ ║   ║ ║      ║   \n║         ║ ║     ║ ╔═╗ ╔╝  ║ ╔══╗ ║  ║ ║       ║ ╔═╗╚╗    ║ ╔══╝    ║ ╔═╗ ╔╝   ╚═╝      ║   \n║         ║ ║     ║ ║ ╚╗╚╗  ║ ║  ║ ║  ║ ╚════╗  ║ ║ ╚╗╚╗   ║ ╚════╗  ║ ║ ╚╗╚╗   ╔═╗      ║\n║         ╚═╝     ╚═╝  ╚═╝  ╚═╝  ╚═╝  ╚══════╝  ╚═╝  ╚═╝   ╚══════╝  ╚═╝  ╚═╝   ╚═╝      ║\n╚════════════════════════════════════════════════════════════════════════════════════════╝        
-`
-)
+// console.log(`\n╔════════════════════════════════════════════════════════════════════════════════════╗\n║ ╔══════╗  ╔═════════╗  ╔══════╗  ╔═╗       ╔══════╗  ╔═╗   ╔═╗  ╔══════╗  ╔══════╗ ║\n║ ║ ╔════╝  ║ ╔═╗ ╔═╗ ║  ║ ╔══╗ ║  ║ ║       ║ ╔══╗ ║  ║ ║   ║ ║  ║ ╔════╝  ║ ╔════╝ ║\n║ ║ ╚═══╗   ║ ║ ║ ║ ║ ║  ║ ╚══╝ ║  ║ ║       ║ ║  ║ ║  ╚╗╚═══╝╔╝  ║ ╚═══╗   ║ ╚═══╗  ║\n║ ║ ╔═══╝   ║ ║ ╚═╝ ║ ║  ║ ╔════╝  ║ ║       ║ ║  ║ ║   ╚═╗ ╔═╝   ║ ╔═══╝   ║ ╔═══╝  ║\n║ ║ ╚════╗  ║ ║     ║ ║  ║ ║       ║ ╚════╗  ║ ╚══╝ ║     ║ ║     ║ ╚════╗  ║ ╚════╗ ║\n║ ╚══════╝  ╚═╝     ╚═╝  ╚═╝       ╚══════╝  ╚══════╝     ╚═╝     ╚══════╝  ╚══════╝ ║\n╚══╦══════════════════════════════════════════════════════════════════════════════╦══╝\n   ║ ╔═══════╗  ╔══════╗  ╔══════╗  ╔══════╗  ╔═╗  ╔═╗   ╔══════╗  ╔══════╗   ╔═╗ ║\n   ║ ╚══╗ ╔══╝  ║ ╔══╗ ║  ║ ╔══╗ ║  ║ ╔════╝  ║ ║ ╔╝╔╝   ║ ╔════╝  ║ ╔══╗ ║   ║ ║ ║\n   ║    ║ ║     ║ ╚══╝ ║  ║ ╚══╝ ║  ║ ║       ║ ╚═╝╔╝    ║ ╚══╗    ║ ╚══╝ ║   ║ ║ ║\n   ║    ║ ║     ║ ╔═╗ ╔╝  ║ ╔══╗ ║  ║ ║       ║ ╔═╗╚╗    ║ ╔══╝    ║ ╔═╗ ╔╝   ╚═╝ ║\n   ║    ║ ║     ║ ║ ╚╗╚╗  ║ ║  ║ ║  ║ ╚════╗  ║ ║ ╚╗╚╗   ║ ╚════╗  ║ ║ ╚╗╚╗   ╔═╗ ║\n   ║    ╚═╝     ╚═╝  ╚═╝  ╚═╝  ╚═╝  ╚══════╝  ╚═╝  ╚═╝   ╚══════╝  ╚═╝  ╚═╝   ╚═╝ ║\n   ╚══════════════════════════════════════════════════════════════════════════════╝        
+// `
+// )
 
 function menu() {
   inquirer
@@ -43,7 +43,7 @@ function menu() {
     });
 }
 
-async function switchFunction(choice) {
+function switchFunction(choice) {
   switch (choice) {
     case '1':
       viewDepartments();
@@ -73,9 +73,16 @@ async function switchFunction(choice) {
   }
 }
 
+function findMax() {
+  let max = 2
+
+  return max
+}
+
 // 1 - FINISHED
 function viewDepartments() {
   const sql = 'SELECT * FROM department';
+
   db.query(sql, (err, results) => {
     // create a string for each row.. make super ballin
     // get all object keys .. find the largest value + 2 for side spacing
@@ -85,7 +92,6 @@ function viewDepartments() {
     for (const { id, name } of results) {
       console.log(`| ${id}  | ${name} |`)
     }
-
     menu();
   });
 }
@@ -94,12 +100,10 @@ function viewDepartments() {
 function viewRoles() {
   const sql = 'SELECT * FROM role';
   db.query(sql, (err, results) => {
-    console.log('')
     console.log(`| id | title    | salary | department_id |`)
     for (const { id, title, salary, department_id } of results) {
       console.log(`${id}  ${title}  ${salary}  ${department_id}`)
     }
-    console.log('')
     menu();
   });
 }
@@ -108,12 +112,10 @@ function viewRoles() {
 function viewEmployees() {
   const sql = 'SELECT * FROM employee';
   db.query(sql, (err, results) => {
-    console.log('')
     console.log(`| id | first_name | last_name | role_id | manager_id |`)
     for (const { id, first_name, last_name, role_id, manager_id } of results) {
       console.log(`${id}  ${first_name}  ${last_name}  ${role_id}  ${manager_id}`)
     }
-    console.log('')
     menu();
   });
 }
@@ -122,13 +124,8 @@ function viewEmployees() {
 async function addDepartment() {
   const sql = `INSERT INTO department (name) 
               VALUES (?)`;
-
   let params;
 
-  // TODO: uppercase first letter after spaces 
-  // split . touppercase . join
-
-  // build department object 
   await inquirer
     .prompt([
       {
@@ -140,56 +137,98 @@ async function addDepartment() {
       console.log(passedObject)
       params = passedObject.name
     });
+
+  // TODO: uppercase first letter after spaces 
+  // split . touppercase . join
   db.query(sql, params, (err, results) => {
     console.log(results)
     menu();
   })
 }
 
-async function getDepartments() {
-  const original = `SELECT *
-                    FROM department`;
-  let hodor = [];
 
-  db.query(original, (err, results) => {
-    for (row of results) {
-      let { id, name } = row
-      hodor.push(`${id} ${name}`)
-    }   
-  })
+async function inquireDepartments() {
+  const original = `SELECT *
+  FROM department`;
+
+  let params;
+
+  let departments = [];
+
+  const thenable = {
+    then: function (resolve, _reject) {
+      // code does not wait for this 
+      db.query(original, async (err, results) => {
+        for await (row of results) {
+          let { id, name } = row;
+          departments.push(`${id} ${name}`);
+        };
+        resolve('resolved!')
+      });
+    }
+  };
+
+  await thenable; // was this all necessary?
 
   await inquirer
-  .prompt([
-    {
-      type: 'input',
-      name: 'title',
-      message: `Enter the title of the role: `,
-    },
-    {
-      type: 'number',
-      name: 'salary',
-      message: `Enter the salary: `,
-    },
-    {
-      // probably need this to be a list.. 
-      // of current departments 
-      type: 'list',
-      name: 'department_id',
-      message: `Which department: `,
-      choices: hodor
-    }
-  ]).then(({ title, salary, department_id }) => { // destructure
-    params = [
-      title,
-      salary,
-      department_id[0]
-    ]
-  });
-
+    .prompt([
+      {
+        type: 'input',
+        name: 'title',
+        message: `Enter the title of the role: `,
+      },
+      {
+        type: 'number',
+        name: 'salary',
+        message: `Enter the salary: `,
+      },
+      {
+        type: 'list',
+        name: 'department_id',
+        pageSize: departments.length,
+        message: `Which department: `,
+        choices: departments
+      }
+    ]).then(({ title, salary, department_id }) => { // destructure
+      console.log(title, salary, department_id)
+      params = [
+        title,
+        salary,
+        department_id[0]
+      ]
+    });
   return params;
-} 
+}
+
+async function addRole() {
+  const sql = `INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)`;
+
+  // build role object
+  // title, salary, department_id
+  let params = await inquireDepartments();
+
+  console.log(params)
+
+  db.query(sql, params, (err, results) => {
+    console.log(results);
+    menu();
+  })
+}
+
+async function inquireRoles() {
+  const sql = 'SELECT * FROM role';
+
+  let roles = []
+
+  db.query(sql, (err, results) => {
+    for (const { id, title, salary, department_id } of results) {
+      roles.push(`${id}  ${title}  ${salary}  ${department_id}`)
+    }
+    return roles
+  });
+}
 // get employees (for inquirer lists)
-async function getEmployees() {
+async function inquireEmployees() {
   const original = `SELECT id, first_name, last_name
                     FROM employee`;
   let employees = []
@@ -211,7 +250,7 @@ async function getEmployees() {
           type: 'list',
           name: 'name',
           message: `Pick your emloyee: `,
-          pageSize: employees.length,
+          pageSize: employees.length - 1,
           choices: employees
         }
       ]).then((choice) => { // destructure
@@ -219,22 +258,6 @@ async function getEmployees() {
         console.log(choice.index)
         menu();
       });
-  })
-}
-
-async function addRole() {
-
-  const sql = `INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)`;
-
-  // build role object
-  // title, salary, department_id
-  let params = await getDepartments();
-
-  console.log(params);
-
-  db.query(sql, params, (err, results) => {
-    console.log(results);
-    menu();
   })
 }
 
@@ -286,12 +309,11 @@ async function addEmployee() {
   })
 }
 
-
 async function updateEmployeeRole() {
   const sql = `UPDATE employee SET role_id = ? 
                WHERE id = ?`;
 
-  let employees = await getEmployees(); // to fill inquirer list
+  let employees = await inquireEmployees(); // to fill inquirer list
 
 
   // db.query(sql, params, (err, results) => {
@@ -300,8 +322,10 @@ async function updateEmployeeRole() {
   // })
 }
 
+// Begin
 menu()
 
-// ADD VALIDATION
 
+// TODO: 
+// ADD VALIDATION
 // MAKE THE TABLE INTERFACE SMART BUILD
