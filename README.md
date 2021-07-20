@@ -17,6 +17,7 @@ Sorry there's no audio on this one 😒
 
 Thanks for viewing!
 
-### Another one down
 
 <img src="https://raw.githubusercontent.com/its-jefe/image-hosting/main/goal-pole.png" width="20%">
+
+### Another one down
