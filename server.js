@@ -10,10 +10,10 @@ let db = mysql.createConnection({
 
 console.clear()
 
-// condesnsed into one line 
-// console.log(`\n╔════════════════════════════════════════════════════════════════════════════════════╗\n║ ╔══════╗  ╔═════════╗  ╔══════╗  ╔═╗       ╔══════╗  ╔═╗   ╔═╗  ╔══════╗  ╔══════╗ ║\n║ ║ ╔════╝  ║ ╔═╗ ╔═╗ ║  ║ ╔══╗ ║  ║ ║       ║ ╔══╗ ║  ║ ║   ║ ║  ║ ╔════╝  ║ ╔════╝ ║\n║ ║ ╚═══╗   ║ ║ ║ ║ ║ ║  ║ ╚══╝ ║  ║ ║       ║ ║  ║ ║  ╚╗╚═══╝╔╝  ║ ╚═══╗   ║ ╚═══╗  ║\n║ ║ ╔═══╝   ║ ║ ╚═╝ ║ ║  ║ ╔════╝  ║ ║       ║ ║  ║ ║   ╚═╗ ╔═╝   ║ ╔═══╝   ║ ╔═══╝  ║\n║ ║ ╚════╗  ║ ║     ║ ║  ║ ║       ║ ╚════╗  ║ ╚══╝ ║     ║ ║     ║ ╚════╗  ║ ╚════╗ ║\n║ ╚══════╝  ╚═╝     ╚═╝  ╚═╝       ╚══════╝  ╚══════╝     ╚═╝     ╚══════╝  ╚══════╝ ║\n╚══╦══════════════════════════════════════════════════════════════════════════════╦══╝\n   ║ ╔═══════╗  ╔══════╗  ╔══════╗  ╔══════╗  ╔═╗  ╔═╗   ╔══════╗  ╔══════╗   ╔═╗ ║\n   ║ ╚══╗ ╔══╝  ║ ╔══╗ ║  ║ ╔══╗ ║  ║ ╔════╝  ║ ║ ╔╝╔╝   ║ ╔════╝  ║ ╔══╗ ║   ║ ║ ║\n   ║    ║ ║     ║ ╚══╝ ║  ║ ╚══╝ ║  ║ ║       ║ ╚═╝╔╝    ║ ╚══╗    ║ ╚══╝ ║   ║ ║ ║\n   ║    ║ ║     ║ ╔═╗ ╔╝  ║ ╔══╗ ║  ║ ║       ║ ╔═╗╚╗    ║ ╔══╝    ║ ╔═╗ ╔╝   ╚═╝ ║\n   ║    ║ ║     ║ ║ ╚╗╚╗  ║ ║  ║ ║  ║ ╚════╗  ║ ║ ╚╗╚╗   ║ ╚════╗  ║ ║ ╚╗╚╗   ╔═╗ ║\n   ║    ╚═╝     ╚═╝  ╚═╝  ╚═╝  ╚═╝  ╚══════╝  ╚═╝  ╚═╝   ╚══════╝  ╚═╝  ╚═╝   ╚═╝ ║\n   ╚══════════════════════════════════════════════════════════════════════════════╝        
-// `
-// )
+condesnsed into one line 
+console.log(`\n╔════════════════════════════════════════════════════════════════════════════════════╗\n║ ╔══════╗  ╔═════════╗  ╔══════╗  ╔═╗       ╔══════╗  ╔═╗   ╔═╗  ╔══════╗  ╔══════╗ ║\n║ ║ ╔════╝  ║ ╔═╗ ╔═╗ ║  ║ ╔══╗ ║  ║ ║       ║ ╔══╗ ║  ║ ║   ║ ║  ║ ╔════╝  ║ ╔════╝ ║\n║ ║ ╚═══╗   ║ ║ ║ ║ ║ ║  ║ ╚══╝ ║  ║ ║       ║ ║  ║ ║  ╚╗╚═══╝╔╝  ║ ╚═══╗   ║ ╚═══╗  ║\n║ ║ ╔═══╝   ║ ║ ╚═╝ ║ ║  ║ ╔════╝  ║ ║       ║ ║  ║ ║   ╚═╗ ╔═╝   ║ ╔═══╝   ║ ╔═══╝  ║\n║ ║ ╚════╗  ║ ║     ║ ║  ║ ║       ║ ╚════╗  ║ ╚══╝ ║     ║ ║     ║ ╚════╗  ║ ╚════╗ ║\n║ ╚══════╝  ╚═╝     ╚═╝  ╚═╝       ╚══════╝  ╚══════╝     ╚═╝     ╚══════╝  ╚══════╝ ║\n╚══╦══════════════════════════════════════════════════════════════════════════════╦══╝\n   ║ ╔═══════╗  ╔══════╗  ╔══════╗  ╔══════╗  ╔═╗  ╔═╗   ╔══════╗  ╔══════╗   ╔═╗ ║\n   ║ ╚══╗ ╔══╝  ║ ╔══╗ ║  ║ ╔══╗ ║  ║ ╔════╝  ║ ║ ╔╝╔╝   ║ ╔════╝  ║ ╔══╗ ║   ║ ║ ║\n   ║    ║ ║     ║ ╚══╝ ║  ║ ╚══╝ ║  ║ ║       ║ ╚═╝╔╝    ║ ╚══╗    ║ ╚══╝ ║   ║ ║ ║\n   ║    ║ ║     ║ ╔═╗ ╔╝  ║ ╔══╗ ║  ║ ║       ║ ╔═╗╚╗    ║ ╔══╝    ║ ╔═╗ ╔╝   ╚═╝ ║\n   ║    ║ ║     ║ ║ ╚╗╚╗  ║ ║  ║ ║  ║ ╚════╗  ║ ║ ╚╗╚╗   ║ ╚════╗  ║ ║ ╚╗╚╗   ╔═╗ ║\n   ║    ╚═╝     ╚═╝  ╚═╝  ╚═╝  ╚═╝  ╚══════╝  ╚═╝  ╚═╝   ╚══════╝  ╚═╝  ╚═╝   ╚═╝ ║\n   ╚══════════════════════════════════════════════════════════════════════════════╝        
+`
+)
 
 function menu() {
   inquirer
@@ -73,10 +73,66 @@ function switchFunction(choice) {
   }
 }
 
+// if there is time ... this function will find the longest value ... for formatting tables 
 function findMax() {
   let max = 2
 
   return max
+}
+
+async function getDepartments() {
+  const sql = `SELECT * FROM department`;
+  let departments = [];
+  const thenable = {
+    then: function (resolve, _reject) {
+      db.query(sql, async (err, results) => {
+        for await (row of results) {
+          let { id, name } = row;
+          departments.push(`${id} ${name}`);
+        };
+        resolve();
+      });
+    }
+  };
+  await thenable; // was this all necessary?
+  return departments;
+}
+// get employees (for inquirer lists)
+async function getEmployees() {
+  const sql = `SELECT id, first_name, last_name FROM employee`;
+  let employees = []
+  const thenable = {
+    then: function (resolve, _reject) {
+      db.query(sql, async (err, results) => {
+        for await (row of results) {
+          let { id, first_name, last_name } = row;
+          employees.push(`${id} ${first_name} ${last_name}`);
+        };
+        resolve();
+      });
+    }
+  };
+  await thenable;
+  return employees;
+}
+
+
+async function getRoles() {
+  const sql = 'SELECT * FROM role';
+  let roles = [];
+  const thenable = {
+    then: function (resolve, _reject) {
+      db.query(sql, async (err, results) => {
+        for await (row of results) {
+          let { id, title, salary, department_id } = row;
+          roles.push(`${id} ${title}`);
+        };
+        resolve();
+      });
+    }
+  };
+  await thenable;
+  return roles;
 }
 
 // 1 - FINISHED
@@ -95,25 +151,23 @@ function viewDepartments() {
     menu();
   });
 }
-
 // 2  - FINISHED
 function viewRoles() {
   const sql = 'SELECT * FROM role';
   db.query(sql, (err, results) => {
     console.log(`| id | title    | salary | department_id |`)
-    for (const { id, title, salary, department_id } of results) {
+    for (const {id, title, salary, department_id} of results) {
       console.log(`${id}  ${title}  ${salary}  ${department_id}`)
     }
     menu();
   });
 }
-
 // 3 : TODO: Add Department and get name by ID or just table join?
-function viewEmployees() {
+async function viewEmployees() {
   const sql = 'SELECT * FROM employee';
-  db.query(sql, (err, results) => {
+  db.query(sql, async (err, results) => {
     console.log(`| id | first_name | last_name | role_id | manager_id |`)
-    for (const { id, first_name, last_name, role_id, manager_id } of results) {
+    for await (const { id, first_name, last_name, role_id, manager_id } of results) {
       console.log(`${id}  ${first_name}  ${last_name}  ${role_id}  ${manager_id}`)
     }
     menu();
@@ -134,42 +188,19 @@ async function addDepartment() {
         message: `Enter the department name: `,
       }
     ]).then((passedObject) => { // pull name
-      console.log(passedObject)
       params = passedObject.name
     });
 
   // TODO: uppercase first letter after spaces 
   // split . touppercase . join
   db.query(sql, params, (err, results) => {
-    console.log(results)
     menu();
   })
 }
-
-
-async function inquireDepartments() {
-  const original = `SELECT *
-  FROM department`;
-
+async function addRole() {
+  const sql = `INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)`;
+  let departments = await getDepartments();
   let params;
-
-  let departments = [];
-
-  const thenable = {
-    then: function (resolve, _reject) {
-      // code does not wait for this 
-      db.query(original, async (err, results) => {
-        for await (row of results) {
-          let { id, name } = row;
-          departments.push(`${id} ${name}`);
-        };
-        resolve('resolved!')
-      });
-    }
-  };
-
-  await thenable; // was this all necessary?
-
   await inquirer
     .prompt([
       {
@@ -190,84 +221,18 @@ async function inquireDepartments() {
         choices: departments
       }
     ]).then(({ title, salary, department_id }) => { // destructure
-      console.log(title, salary, department_id)
-      params = [
-        title,
-        salary,
-        department_id[0]
-      ]
+      params = [title, salary, department_id[0]]
     });
-  return params;
-}
-
-async function addRole() {
-  const sql = `INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)`;
-
-  // build role object
-  // title, salary, department_id
-  let params = await inquireDepartments();
-
-  console.log(params)
-
   db.query(sql, params, (err, results) => {
-    console.log(results);
     menu();
   })
 }
-
-async function inquireRoles() {
-  const sql = 'SELECT * FROM role';
-
-  let roles = []
-
-  db.query(sql, (err, results) => {
-    for (const { id, title, salary, department_id } of results) {
-      roles.push(`${id}  ${title}  ${salary}  ${department_id}`)
-    }
-    return roles
-  });
-}
-// get employees (for inquirer lists)
-async function inquireEmployees() {
-  const original = `SELECT id, first_name, last_name
-                    FROM employee`;
-  let employees = []
-
-  //fill employees with this
-  db.query(original, async (err, results) => {
-    for (row of results) {
-      let { id, first_name, last_name } = row
-      employees.push(`${id}. ${first_name} ${last_name}`)
-    }
-    console.log(`- - - - - - - - - - - - - - - - - - - -
-    `)
-    console.log(employees)
-    console.log(employees.length)
-
-    await inquirer
-      .prompt([
-        {
-          type: 'list',
-          name: 'name',
-          message: `Pick your emloyee: `,
-          pageSize: employees.length - 1,
-          choices: employees
-        }
-      ]).then((choice) => { // destructure
-        console.log(choice)
-        console.log(choice.index)
-        menu();
-      });
-  })
-}
-
 // NEED TO ADD DEPARTMENTS TO THIS -> queries should probably be based off of departments for choosing roles and managers 
 async function addEmployee() {
   const sql = `INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)`;
-
+  let roles = await getRoles();
+  let employees = await getEmployees();
   let params;
-  // build employee object 
-  // first_name, last_name, role_id, manager_id
   await inquirer
     .prompt([
       {
@@ -281,50 +246,61 @@ async function addEmployee() {
         message: `Last name of employee: `,
       },
       {
-        // probably need this to be a list.. 
-        // of current departments 
-        type: 'number',
+        type: 'list',
         name: 'role_id',
         message: `Role of employee: `,
-        // list roles
+        pageSize: roles.length,
+        choices: roles
       },
       {
-        type: 'input',
+        type: 'list',
         name: 'manager_id',
         message: `Manager ID: `,
-        // list with option for null
+        pageSize: employees.length,
+        choices: employees
       }
     ]).then(({ first_name, last_name, role_id, manager_id }) => { // destructure
-      params = [
-        first_name,
-        last_name,
-        role_id,
-        manager_id
-      ]
+      params = [first_name, last_name, role_id[0], manager_id[0]]
     });
 
   db.query(sql, params, (err, results) => {
-    console.log(results);
     menu();
   })
 }
 
 async function updateEmployeeRole() {
-  const sql = `UPDATE employee SET role_id = ? 
-               WHERE id = ?`;
+  const sql = `UPDATE employee SET role_id = ? WHERE id = ?`;
+  let roles = await getRoles();
+  let employees = await getEmployees();
+  let params;
+  await inquirer
+    .prompt([
+      {
+        type: 'list',
+        name: 'id',
+        message: `Pick your emloyee: `,
+        pageSize: employees.length,
+        choices: employees
+      },
+      {
+        type: 'list',
+        name: 'role_id',
+        message: `Change their role: `,
+        pageSize: roles.length,
+        choices: roles
+      },
 
-  let employees = await inquireEmployees(); // to fill inquirer list
+    ]).then(({ id, role_id }) => { // destructure
+      params = [role_id[0], id[0]] 
+    });
 
-
-  // db.query(sql, params, (err, results) => {
-  //   console.log(results)
-  // menu();
-  // })
+  db.query(sql, params, (err, results) => {
+    menu();
+  })
 }
 
 // Begin
 menu()
-
 
 // TODO: 
 // ADD VALIDATION
