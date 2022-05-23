@@ -11,7 +11,7 @@ This node.js application uses MySQL2 and Inquirer to store, retrieve, and edit c
 
 - Also the formatting is incredibly underwhelming. I wanted to work on that more but had to let it go to battle with queries and asynchronicity
 
-[Here is the usage video](https://its-jefe.github.io/videos/)
+[Here is the usage video](https://its-jefe.github.io/Employee-Tracker/)
 
 Sorry there's no audio on this one 😒
 
