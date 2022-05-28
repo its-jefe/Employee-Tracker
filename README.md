@@ -13,11 +13,9 @@ This node.js application uses MySQL2 and Inquirer to store, retrieve, and edit c
 
 [Here is the usage video](https://its-jefe.github.io/Employee-Tracker/)
 
-Sorry there's no audio on this one 😒
+Sorry there's no audio on this one 😒 <br>
+<em>* Will be adding audio soon (Update 5/28) </em>
+
 
 Thanks for viewing!
-
-
 <img src="https://raw.githubusercontent.com/its-jefe/image-hosting/main/goal-pole.png" width="20%">
-
-### Another one down
